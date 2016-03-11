@@ -1,0 +1,25 @@
+{
+  "name": "lcd-digits-node",
+  "version": "0.0.1",
+  "description": "nodejs's version",
+  "main": "main.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crystalGuo/lcd-digits-node-crystalGuo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crystalGuo/lcd-digits-node-crystalGuo/issues"
+  },
+  "homepage": "https://github.com/crystalGuo/lcd-digits-node-crystalGuo#readme",
+  "dependencies": {
+    "lodash": "^4.6.1"
+  },
+  "devDependencies": {
+    "jasmine": "^2.4.1"
+  }
+}
