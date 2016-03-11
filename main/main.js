@@ -1,19 +1,21 @@
+'use strict'
 var loadLCDArray = require('../spec/fixture.js');
+
 function printResult(number) {
-  var numberArray = getNumberArray(number);
-  var LCDArray = getLCDArray(numberArray);
-  var LCDString = getLCDString(LCDArray);
+  let numberArray = getNumberArray(number);
+  let LCDArray = getLCDArray(numberArray);
+  let LCDString = getLCDString(LCDArray);
 
   console.log(LCDString);
 }
 function getNumberArray(number) {
-  var numberString = number.toString();
-  var numberArray = numberString.split("");
-  var LCDArray = loadLCDArray();
+  let numberString = number.toString();
+  let numberArray = numberString.split("");
+  let LCDArray = loadLCDArray();
 
-  var result = [];
+  let result = [];
 
-  for(var i = 0; i < numberArray.length; i++) {
+  for(let i = 0; i < numberArray.length; i++) {
     var index = parseInt(numberArray[i]);
     result.push(LCDArray[index]);
   }
@@ -22,11 +24,11 @@ function getNumberArray(number) {
 }
 
 function getLCDArray(numberString) {
-  var LCDArray = [];
+  let LCDArray = [];
 
-  for(var i = 0; i < numberString.length; i++) {
-    var string = '';
-    for(var index = 0; index < numberString.length; index++) {
+  for(let i = 0; i < numberString.length; i++) {
+    let string = '';
+    for(let index = 0; index < numberString.length; index++) {
       string += numberString[index].substr(i*3,3);
       string += (index === numberString.length-1) ? '\n' : ' ';
     }
@@ -37,7 +39,7 @@ function getLCDArray(numberString) {
 }
 
 function getLCDString(LCDArray) {
-  var LCDString = '';
+  let LCDString = '';
   LCDArray.forEach(function(element) {
     LCDString += element;
   });
