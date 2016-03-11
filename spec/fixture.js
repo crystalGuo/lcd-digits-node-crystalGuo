@@ -1,5 +1,7 @@
+'use strict'
+
 function loadLCDArray() {
-  var LCDArray = [
+  let LCDArray = [
     "._.|.||_|",
     ".....|..|",
     "._.._||_.",
